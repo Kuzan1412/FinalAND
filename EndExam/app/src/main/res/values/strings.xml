@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EndExam</string>
+    <string name="title_Login">Login</string>
+    <string name="Password">Password</string>
+    <string name="User">User</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ProName">Name</string>
+    <string name="Name_btn_Add">Add</string>
+    <string name="ProCode">Code</string>
+    <string name="ProCost">Price</string>
+    <string name="UnitVND">VND</string>
+    <string name="UnitDolar">$</string>
+    <string name="Name_btn_Save">Save</string>
+    <string name="Name_btn_Create">Create</string>
+    <string name="Name_btn_Pay">Pay</string>
+    <string name="Name_btn_Del">Del</string>
+    <string name="title_Table">Detail Table</string>
+    <string name="TableQuatity">Qty</string>
+    <string name="TableStatus">Status</string>
+    <string name="Sum">Sum</string>
+    <string name="Name_btn_Completely">Completely</string>
+    <string name="Name_btn_Remeber">Remember me</string>
+    <string name="Name_btn_Clear">Clear</string>
+    <string name="Name_btn_Returned">Returned</string>
+    <string name="ProQuatity">Quatity</string>
+    <string name="Name_btn_R">P_Returned</string>
+    <string name="Name_btn_NR">Pay_NR</string>
+</resources>
