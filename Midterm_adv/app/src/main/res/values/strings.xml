@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Midterm_adv</string>
+    <string name="title_Login">Log in</string>
+    <string name="Password">Password</string>
+    <string name="User">User</string>
+    <string name="btnUp">Update</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnDel">Del</string>
+</resources>

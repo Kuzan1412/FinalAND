@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@drawable/border_radius"
+       android:padding="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:id="@+id/id_LayoutPhone"
+       >
+       <LinearLayout
+           android:layout_weight="0.7"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:textColor="@color/colorLogin"
+               android:text="Name: "/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:textColor="@color/colorLogin"
+               android:text="Price: "/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:textColor="@color/colorLogin"
+               android:text="Producer: "/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:textColor="@color/colorLogin"
+               android:text="Description: "/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="2"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/id_namepro"
+               android:layout_marginTop="10dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:id="@+id/id_price"/>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:id="@+id/id_producer"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:id="@+id/id_description"/>
+       </LinearLayout>
+
+   </LinearLayout>
+</LinearLayout>
