@@ -5,6 +5,8 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
     android:id="@+id/id_layout"
     android:background="@drawable/border">
     <LinearLayout
@@ -15,12 +17,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal">
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Key"
+            android:textColor="	 #1a1aff"
             android:textStyle="bold"
             />
         <TextView
@@ -31,12 +35,14 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textColor="	 #1a1aff"
             android:text="Id Product: "/>
         <TextView
             android:id="@+id/id_txt_detail_id"
@@ -47,11 +53,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:textStyle="bold"
+            android:textColor="	 #1a1aff"
             android:layout_height="wrap_content"
             android:text="Name: "/>
         <TextView
@@ -63,12 +71,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
+            android:textColor="	 #1a1aff"
             android:text="Price: "/>
         <TextView
             android:id="@+id/id_txt_detail_price"
@@ -79,12 +89,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textColor="	 #1a1aff"
             android:text="Producer: "/>
         <TextView
             android:id="@+id/id_txt_detail_producder"
@@ -95,12 +107,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textColor="	 #1a1aff"
             android:text="Description: "/>
         <TextView
             android:id="@+id/id_txt_detail_desc"

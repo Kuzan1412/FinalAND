@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView ;
     GoogleSignInClient mGoogleSignInClient;
     String TAG = "";
+    static String id = "";
     int RC_SIGN_IN =1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,14 +70,16 @@ public class MainActivity extends AppCompatActivity {
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
-            String id  = account.getId();
-            textView.setText(id);
+            id  = account.getId();
+            //textView.setText(id);
             final Map<String, String> mMap = new HashMap<>();
             mMap.put("google_id", id);
             mMap.put("firebase_url", "https://final-1558424048521.firebaseio.com");
             new CallAPIAsyntask(mMap, MainActivity.this).execute("http://vidoandroid.vidophp.tk/api/FireBase/PushData");
             Intent intent = new Intent(MainActivity.this, ShowMain.class);
+
             startActivity(intent);
+
             // Signed in successfully, show authenticated UI.
             updateUI(account);
         } catch (ApiException e) {

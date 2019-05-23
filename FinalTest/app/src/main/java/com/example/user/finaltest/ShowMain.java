@@ -17,7 +17,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ShowMain extends AppCompatActivity {
 
@@ -27,7 +29,7 @@ public class ShowMain extends AppCompatActivity {
 
     static List<ProductModel> listpro;
     RecyclerView recyclerView;
-    Button btnAdd;
+    Button btnAdd, btnRes;
     String key;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class ShowMain extends AppCompatActivity {
         setContentView(R.layout.activity_show_main);
         recyclerView = (RecyclerView) findViewById(R.id.id_recylerview);
         btnAdd = (Button) findViewById(R.id.id_btn_add);
-
+        btnRes = (Button) findViewById(R.id.id_btn_refresh);
         listpro = new ArrayList<ProductModel>();
 
         recyclerView.setHasFixedSize(true);
@@ -46,7 +48,17 @@ public class ShowMain extends AppCompatActivity {
                 startActivity(new Intent(ShowMain.this, AddPro.class));
             }
         });
-
+        btnRes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myRef.removeValue();
+                ShowMain.listpro = new ArrayList<ProductModel>();
+                final Map<String, String> mMap = new HashMap<>();
+                mMap.put("google_id", MainActivity.id);
+                mMap.put("firebase_url", "https://final-1558424048521.firebaseio.com");
+                new CallAPIAsyntask(mMap, ShowMain.this).execute("http://vidoandroid.vidophp.tk/api/FireBase/PushData");
+            }
+        });
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("AdvancedAndroidFinalTest");
         myRef.addValueEventListener(new ValueEventListener() {
